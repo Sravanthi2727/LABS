@@ -181,7 +181,7 @@ int search(int signed a[], int k, int v){
 
 
 
-//main program starts
+// 1 main program starts
 int main(){
     signed int sA1[10], sA2[10], mA[20];
 	int i,j,k,l,m,n;
@@ -194,127 +194,127 @@ int main(){
 	printf("The elements of your Sub Array 1:\n");
 	print(sA1,10);
 	printf("\n");
-// // //Sub Array 2 creating
-// 	for(i=0;i<10;i++){
-// 		printf("Enter the number of your [%d] index value of signed Sub Array 2:", i);
-// 		scanf("%d", &sA2[i]);
-// 		printf("\n");
-// 	}
-// 	printf("The elements of your Sub Array 1:\n");
-// 	print(sA2,10);
-// 	printf("\n");
-// //Main Array creating
-// 	for(i=0;i<20;i++){
-// 		printf("Enter the number of your [%d] index value of signed Main Array:", i);
-// 		scanf("%d", &mA[i]);
-// 		printf("\n");
-// 	}
-// 	printf("The elements of your Sub Array 1:\n");
-// 	print(mA,20);
-// 	printf("\n");
-// //Inserting in an Array
-//    printf("Going to perform INSERTING TASK :\n");
-//    j = array();
-//    printf("You have choosen the array number : %d\n", j);
-//     if(j == 1){
-//    	insert(sA1, 10);
-// 	}
-// 	else if(j==2){
-// 		insert(sA2, 10);
-// 	}
-// 	else if(j==3){
-// 		insert(mA, 20);
-// 	}
+// //Sub Array 2 creating
+	for(i=0;i<10;i++){
+		printf("Enter the number of your [%d] index value of signed Sub Array 2:", i);
+		scanf("%d", &sA2[i]);
+		printf("\n");
+	}
+	printf("The elements of your Sub Array 1:\n");
+	print(sA2,10);
+	printf("\n");
+//Main Array creating
+	for(i=0;i<20;i++){
+		printf("Enter the number of your [%d] index value of signed Main Array:", i);
+		scanf("%d", &mA[i]);
+		printf("\n");
+	}
+	printf("The elements of your Sub Array 1:\n");
+	print(mA,20);
+	printf("\n");
+// a) Inserting in an Array
+   printf("Going to perform INSERTING TASK :\n");
+   j = array();
+   printf("You have choosen the array number : %d\n", j);
+    if(j == 1){
+   	insert(sA1, 10);
+	}
+	else if(j==2){
+		insert(sA2, 10);
+	}
+	else if(j==3){
+		insert(mA, 20);
+	}
 	
-// //Modify
-//     printf("Going to perform MODIFYING TASK :\n");
-//     j = array();
-//     printf("You have choosen the array number : %d\n", j);
-//     if(j == 1){
-//     	modify(sA1, 10);
-// 	}
-// 	else if(j==2){
-// 		modify(sA2, 10);
-// 	}
-// 	else if(j==3){
-// 		modify(mA, 20);
-// 	}
-// //Delete
-//     printf("Going to perform DELETING TASK :\n");
-//     j = array();
-//     printf("You have choosen the array number : %d\n", j);
-//     if(j == 1){
-//     	delete(sA1, 10);
-// 	}
-// 	else if(j==2){
-// 		delete(sA2, 10);
-// 	}
-// 	else if(j==3){
-// 		delete(mA, 20);
-//     }
+// b) Modify
+    printf("Going to perform MODIFYING TASK :\n");
+    j = array();
+    printf("You have choosen the array number : %d\n", j);
+    if(j == 1){
+    	modify(sA1, 10);
+	}
+	else if(j==2){
+		modify(sA2, 10);
+	}
+	else if(j==3){
+		modify(mA, 20);
+	}
+// c) Delete
+    printf("Going to perform DELETING TASK :\n");
+    j = array();
+    printf("You have choosen the array number : %d\n", j);
+    if(j == 1){
+    	delete(sA1, 10);
+	}
+	else if(j==2){
+		delete(sA2, 10);
+	}
+	else if(j==3){
+		delete(mA, 20);
+    }
 
-// //reverse
-//    printf("Going to perform Reversing task :\n");
-//    j = array();
-//    if(j == 1){
-//     	reverse(sA1, 10);
-// 	}
-// 	else if(j==2){
-// 		reverse(sA2, 10);
-// 	}
-// 	else if(j==3){
-// 		reverse(mA, 20);
-//     }
+// d) reverse
+   printf("Going to perform Reversing task :\n");
+   j = array();
+   if(j == 1){
+    	reverse(sA1, 10);
+	}
+	else if(j==2){
+		reverse(sA2, 10);
+	}
+	else if(j==3){
+		reverse(mA, 20);
+    }
 
-// //merge 2 arrays in descending order
-//    printf("\nMerging 2 arrays in descending order & the arrays are :\n");
-//    int a[6]={10,2,8,4,5,0}, b[6]={6,3,8,9,1,-1}, merge[12], h=0;
-//    print(a,6);
-//    printf("\n"); 
-//    print(b,6);
-//    printf("\n"); 
-//    for(i=0;i<6;i++) merge[h++] = a[i];
-//    for(i=0;i<6;i++) merge[h++] = b[i];
-//    for(i=0;i<11;i++){
-// 	   int k = i;
-// 	   for(j=i+1;j<12;j++){
-// 		  if(merge[k]<merge[j]) k = j;
-// 	   }
-// 	   int t = merge[i];
-// 	   merge[i] = merge[k];
-// 	   merge[k] = t;
-//    }
-//    print(merge,12);
+// f) merge 2 arrays in descending order
+   printf("\nMerging 2 arrays in descending order & the arrays are :\n");
+   int a[6]={10,2,8,4,5,0}, b[6]={6,3,8,9,1,-1}, merge[12], h=0;
+   print(a,6);
+   printf("\n"); 
+   print(b,6);
+   printf("\n"); 
+   for(i=0;i<6;i++) merge[h++] = a[i];
+   for(i=0;i<6;i++) merge[h++] = b[i];
+   for(i=0;i<11;i++){
+	   int k = i;
+	   for(j=i+1;j<12;j++){
+		  if(merge[k]<merge[j]) k = j;
+	   }
+	   int t = merge[i];
+	   merge[i] = merge[k];
+	   merge[k] = t;
+   }
+   print(merge,12);
 
-// //sum of all elements
-//    printf("\nWe going to perform Sum Of All Elements :\n");
-//    j = array();
-//    if(j == 1) printf("Sum of all elements : %d, %d", add(sA1, 10), sum(sA1, 10));
-//    else if(j == 2) printf("Sum of all elements %d, %d:",add(sA2, 10), sum(sA2, 10));
-//    else if(j==3) printf("Sum of all elements : %d, %d",add(mA, 20), sum(mA, 20));
-//    printf("\n");
-// //separating positive and negative elements from array from main array.
-//    int s1[10], s2[10];
-//    m = 0, n = 0;
-//    for(i=0;i<20;i++){
-// 	if(mA[i]<0) s1[m++] = mA[i];
-// 	else s2[n++]=mA[i];
-//    }
-//    printf("The positive numbers from Main Array are :"); print(s2, n);
-//    printf("\nThe negative numbers from Main Array are :"); print(s1, m);
+// g) sum of all elements
+   printf("\nWe going to perform Sum Of All Elements :\n");
+   j = array();
+   if(j == 1) printf("Sum of all elements : %d, %d", add(sA1, 10), sum(sA1, 10));
+   else if(j == 2) printf("Sum of all elements %d, %d:",add(sA2, 10), sum(sA2, 10));
+   else if(j==3) printf("Sum of all elements : %d, %d",add(mA, 20), sum(mA, 20));
+   printf("\n");
+// i) j) separating positive and negative elements from array from main array.
+   int s1[10], s2[10];
+   m = 0, n = 0;
+   for(i=0;i<20;i++){
+	if(mA[i]<0) s1[m++] = mA[i];
+	else s2[n++]=mA[i];
+   }
+   printf("The positive numbers from Main Array are :"); print(s2, n);
+   printf("\nThe negative numbers from Main Array are :"); print(s1, m);
 
-// //copy sequence into main array.
-//     printf("\nEnter\n1 - to copy from Sub  Array 1 and 2 - from Sub Array 2 :");
-// 	scanf("%d", &l);
-// 	if(l==1){
-// 		for(i=0;i<10;i++) mA[i] = sA1[i];
-// 	}
-// 	else {
-// 		for(i=0;i<10;i++) mA[i] = sA2[i];
-// 	}
-// 	print(mA,10);
+//e) copy sequence into main array.
+    printf("\nEnter\n1 - to copy from Sub  Array 1 and 2 - from Sub Array 2 :");
+	scanf("%d", &l);
+	if(l==1){
+		for(i=0;i<10;i++) mA[i] = sA1[i];
+	}
+	else {
+		for(i=0;i<10;i++) mA[i] = sA2[i];
+	}
+	print(mA,10);
 
-//array searching
+// h) array searching
     int v;
     printf("\nNow we are going to find the index value for the given  value by you in array! :\n");
 	printf("Enter the Value :");
