@@ -1,37 +1,34 @@
 #include<stdio.h>
-#define top 3
-
-void push(int a[], int max, int value){
-	if(top==max-1){
-		printf("Stack Overflow/full");
-	}
-	else a[top++] = value;
+#define max 5
+int stack[max];
+int top = -1;
+int isEmpty(){
+    return top == -1;
 }
 
-void pop(int a[], int max){
-	if(top==-1) printf("Stack Underflow/Empty");
-	else top--;
+int isFull(){
+    return top ==  max-1;
 }
 
-void peep(int a[] , int max){
-	printf("The last element of stack is %d", a[top]);
+void push(int x){
+    if(isFull()) printf("Stack Overflow\n");
+    else {
+        stack[++top]  = x;
+        printf("Pushed element is %d %d \n", x, top);
+}
 }
 
-void isEmpty(int a[],int max){
-	if(top==-1) printf("Stack is Empty");
+void pop(){
+    if(isEmpty()) printf("Stack Underflow\n");
+    else printf("Elememt popped is %d\n ", stack[top--]);
 }
 
-void isFull(int a[], int max){
-	if(top==max-1) printf("Stack is Full");
+void peep(){
+    if(isEmpty()) printf("Stack Underflow\n");
+    else printf("The last element in the stack is %d\n", stack[top]);
 }
-
-void print(int a[], int max){
-	int i;
-	for(i=0;i<max;i++) printf("%d ", a[i]);
-}
-
-int main(){
-	int a[5]={1,2,3};
-	push(a, 5, 25);print(a,5);pop(a, 5);print(a,5);peep(a,5);
-	return 0;
+int main()
+{
+    push(2);push(23);push(65);push(78);push(90);push(142);pop();peep(),isEmpty();isFull();
+    return 0;
 }
