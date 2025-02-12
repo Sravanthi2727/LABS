@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 struct Node
 {
@@ -128,14 +127,19 @@ int main()
     third->data = 30;
     third->next = NULL;
 
-    // traversal(head);
-    // head = insertB(head);
-    // traversal(head);
-    // insertAtInd(head);
-    // traversal(head);
-    // insertE(head);
-    // traversal(head);
+    traversal(head);
+    
+    head = insertB(head);
+    traversal(head);
+    
+    insertAtInd(head);
+    traversal(head);
+    
+    insertE(head);
+    traversal(head);
+    
     insertByNode(head);
     traversal(head);
+    
     return 0;
 }
